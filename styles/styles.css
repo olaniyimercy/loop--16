@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #78accd;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 3.5rem 0 13rem 0 4rem;
+    background-color: #fff;
+}
+
+.calendar {
+    display: grid;
+    grid-template-rows: 13rem;
+    grid-template-columns: repeat(7, 3rem);
+    align-items: center;
+    text-align: center;
+    line-height: 2rem;
+    padding: 0 1rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.headings {
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    padding: 1.5rem .9rem;
+    font-weight: 600;
+    color: #848f98;
+}
+
+hr {
+    color: #ececec;
+}
+
+.calendar__days {
+    text-transform: uppercase;
+    color: #7f8b96;
+    font-weight: 600;
+}
+
+.calendar__light-days {
+    color: #e6e6e6;
+}
+
+.calendar__day-seven {
+    background-color: #de6e46;
+    color: #fff;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar__day {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}
+
+.nineteen {
+    border: 2px solid #ae5989;
+}
+
+.sixteen {
+    border: 2px solid #de6e46;
+}
+
+sup {
+    position: absolute;
+    color: #fff;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#five {
+    background-color: #ae5989;
+    bottom: 3.7rem;
+    left: 5rem;
+}
+
+#six {
+    background-color: #de6e46;
+    bottom: 5.7rem;
+    right: 5rem;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr .8fr .1fr;
+    padding: 1.5rem;
+    font-weight: 600;
+}
+
+.sign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #de6e46;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}
