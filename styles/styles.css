@@ -5,117 +5,101 @@
 }
 
 body {
-    background-color: #78accd;
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: rgb(120,172,205);
     font-family: sans-serif;
+    font-weight: 600;
 }
-
 .container {
     display: grid;
-    grid-template-rows: 3.5rem 0 13rem 0 4rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3rem .5rem 17rem .5rem 3.5rem;
     background-color: #fff;
+    align-items: center;
 }
 
-.calendar {
+.head {
     display: grid;
-    grid-template-rows: 13rem;
-    grid-template-columns: repeat(7, 3rem);
-    align-items: center;
+    grid-template-columns: 17rem 6.4rem;
+    color: rgb(132, 143, 152);
+    padding:.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7, 3.5rem);
+    grid-template-rows: repeat(6, 2.5rem);
     text-align: center;
-    line-height: 2rem;
-    padding: 0 1rem;
-    font-weight: 600;
     position: relative;
 }
 
-.headings {
-    display: grid;
-    grid-template-columns: 1fr .5fr;
-    padding: 1.5rem .9rem;
-    font-weight: 600;
-    color: #848f98;
+.grid_title {
+    color: rgb(127, 139, 150);
 }
 
-hr {
-    color: #ececec;
+.calendar_light-days {
+    color: rgb(230,230,230);
 }
 
-.calendar__days {
-    text-transform: uppercase;
-    color: #7f8b96;
-    font-weight: 600;
-}
-
-.calendar__light-days {
-    color: #e6e6e6;
-}
-
-.calendar__day-seven {
-    background-color: #de6e46;
-    color: #fff;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-.calendar__day {
+.calendar-days {
     background-color: #fff;
-    border-radius: 50%;
     width: 2rem;
     height: 2rem;
-}
-
-.nineteen {
-    border: 2px solid #ae5989;
-}
-
-.sixteen {
-    border: 2px solid #de6e46;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: .2rem;
 }
 
 sup {
     position: absolute;
     color: #fff;
-    width: 1.2rem;
-    height: 1.2rem;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 1.2rem;
+    height:1.2rem;
+}
+
+.seven {
+    background-color: rgb(222,110,70);
+    color: #fff;
+    padding:  0 .7rem;
 }
 
 #five {
-    background-color: #ae5989;
-    bottom: 3.7rem;
-    left: 5rem;
+    background-color: rgb(194, 89, 137);
+    bottom: 4.2rem;
+    left:5.4rem;
 }
 
 #six {
-    background-color: #de6e46;
-    bottom: 5.7rem;
-    right: 5rem;
+    background-color: rgb(222,110,70);
+    top:7rem;
+    right: 4rem;
+}
+
+.nineteen {
+    border: 2px solid rgb(194, 89, 137);
+}
+
+.sixteen {
+    border: 2px solid rgb(222,110,70);
+}
+
+.sign {
+    border: 2px solid rgb(222,110,70);
+    padding: .5rem;
 }
 
 footer {
     display: grid;
-    grid-template-columns: 1fr .8fr .1fr;
-    padding: 1.5rem;
-    font-weight: 600;
+    grid-template-columns: 4rem 16rem 0;
+    padding: 1rem;
 }
 
-.sign {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #de6e46;
-    border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
-}
